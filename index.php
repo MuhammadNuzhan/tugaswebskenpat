@@ -83,6 +83,7 @@ include 'ceksession.php';
     <p>Website : smkn4bjm.sch.id</p>
     <p>Email : info@smkn4bjm.sch.id</p>
     <p>Manajemen Mutu : ISO 9001-2015</p>
+    <p><a href="#manajemen">Lihat selengkapnya....</a></p>
     </div>
     </div>
     </section>
@@ -274,7 +275,7 @@ Khataman Alquran ini bebernya merupakan instruksi dari Gubernur Kalimantan Selat
      
     <h2><span>Manajemen </span>Sekolah</h2> 
      <div class="manajemen-container">
-        <a href="#" class="manajemen-box">
+        <a href="ketuakompetensi.php" class="manajemen-box">
             <div>
                 <div class="manajemen-title">Ketua Kompetensi Keahlian</div>
                 <div class="manajemen-description">Ketua jurusan untuk masing-masing program keahlian</div>
@@ -313,12 +314,12 @@ Khataman Alquran ini bebernya merupakan instruksi dari Gubernur Kalimantan Selat
             <img src="image/bell.png" alt="foto" class="manajemen-logo"> <!-- Ganti "medal.png" dengan URL atau path ke logo medali -->
         </a>
 
-        <a href="#" class="manajemen-box">
+        <a href="maknalogo.php" class="manajemen-box">
             <div>
-                <div class="manajemen-title">Prestasi Siswa</div>
-                <div class="manajemen-description">Data seluruh prestasi siswa selama menempuh pendidikan di SMKN 4</div>
+                <div class="manajemen-title">Makna Logo</div>
+                <div class="manajemen-description">Makna dari logo SMK Negeri 4 Banjarmasin</div>
             </div>
-            <img src="image/tenagakependidikan.png" alt="foto" class="manajemen-logo"> <!-- Ganti "medal.png" dengan URL atau path ke logo medali -->
+            <img src="image/logosmk4.png" alt="foto" class="manajemen-logo"> <!-- Ganti "medal.png" dengan URL atau path ke logo medali -->
         </a>
 
         <a href="#" class="manajemen-box">
@@ -348,8 +349,7 @@ Khataman Alquran ini bebernya merupakan instruksi dari Gubernur Kalimantan Selat
    <p>No. Telp : 0511 – 3305054</p>
    <p>Email : info@smkn4bjm.sch.id</p>
     <div class="row">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127460.2646916154!2d114.51180874295862!3d-3.317218026870931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de4209aa1eec961%3A0x26030bfcc09204d2!2sBanjarmasin%2C%20Kota%20Banjarmasin%2C%20Kalimantan%20Selatan!5e0!3m2!1sid!2sid!4v1682438291694!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-    
+    <iframe style="padding-left:2em; padding-top:3em;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.2233415350843!2d114.58753691115857!3d-3.2947890411075282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423a0b07eb9cd%3A0xc5fc816bceb7bcf7!2sSekolah%20Menengah%20Kejuruan%20Negeri%204%20Banjarmasin!5e0!3m2!1sid!2sid!4v1694750447047!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <form action="">
             
     <div class="input-group">
