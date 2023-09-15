@@ -160,6 +160,7 @@ body{
 .menu .row .menu-card .menu-card-price{
     text-align: center;
     font-size:15px;
+    max-width:13rem;
 }
 
 /* Footer */
