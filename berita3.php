@@ -138,6 +138,33 @@ body{
 .menu .row .menu-card img{
     border-radius: 3%;
     width: 100%;
+    opacity: 0; /* Set gambar menjadi tidak terlihat */
+    animation: muncul 8s ease forwards; /* Animasi muncul selama 2 detik */
+    transform: translateY(-100%);
+    animation-duration: 3s;
+}
+.menu .row .menu-card .menu-card-title, .menu-card-price{
+    opacity: 0; /* Set gambar menjadi tidak terlihat */
+    animation: muncul2 6s ease forwards; /* Animasi muncul selama 2 detik */
+    
+}
+@keyframes muncul {
+    0% {
+        opacity: 0; /* Pada awal animasi, gambar tidak terlihat */
+        transform: translateY(-100%); /* Pada awal animasi, gambar ada di luar layar bawah */
+    }
+    100% {
+        opacity: 1; /* Pada akhir animasi, gambar muncul sepenuhnya */
+        transform: translateY(0); /* Pada akhir animasi, gambar kembali ke posisi awal (tidak ada perpindahan) */
+    }
+}
+@keyframes muncul2 {
+    0% {
+        opacity: 0; /* Pada awal animasi, gambar tidak terlihat */
+         }
+    100% {
+        opacity: 1; /* Pada akhir animasi, gambar muncul sepenuhnya */
+         }
 }
 .menu .row .menu-card .menu-card-title{
     margin: 1rem auto 0.5rem;
