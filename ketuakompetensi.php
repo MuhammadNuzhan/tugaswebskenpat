@@ -139,30 +139,75 @@ body{
     justify-content: center;
 
 }
-.menu .row .menu-card{
+.menu .row .menu-card, .menu-card2, .menu-card3{
     text-align: center;
     padding: 1px;
 
 }
-.menu .row .menu-card img{
+.menu .row .menu-card img, .menu-card2 img, .menu-card3 img{
     border-radius: 1%;
     width: 50%;
     padding: 1px;
     border: 1px solid #fff;
 }
-.menu .row .menu-card .menu-card-title{
+.menu .row .menu-card img , .menu-card-title, .menu-card-price{
+    opacity: 0; /* Set gambar menjadi tidak terlihat */
+    animation: muncul 8s ease forwards; /* Animasi muncul selama 2 detik */
+    animation-duration: 3s;
+    
+}
+.menu .row .menu-card2 img , .menu-card-title2, .menu-card-price2{
+    opacity: 0; /* Set gambar menjadi tidak terlihat */
+    animation: muncul2 5s ease forwards; /* Animasi muncul selama 2 detik */
+}
+.menu .row .menu-card3 img , .menu-card-title3, .menu-card-price3{
+    opacity: 0; /* Set gambar menjadi tidak terlihat */
+    animation: muncul3 8s ease forwards; /* Animasi muncul selama 2 detik */
+    animation-duration: 3s;
+}
+.menu .row .menu-card .menu-card-title, .menu-card2 .menu-card-title2, .menu-card3 .menu-card-title3{
     margin: 2px auto 0.5rem;
     color: #fff;
     font-size: 18px;
     padding-top:2px;
 
 }
-.menu .row .menu-card .menu-card-price{
+.menu .row .menu-card .menu-card-price, .menu-card2 .menu-card-price2, .menu-card3 .menu-card-price3{
     text-align: center;
     font-size:15px;
     max-width:13rem;
 }
-
+@keyframes muncul {
+    0% {
+        opacity: 0; /* Pada awal animasi, gambar tidak terlihat */
+        transform: translateX(-100%); /* Pada awal animasi, gambar ada di luar layar kiri */
+    }
+    100% {
+        opacity: 1; /* Pada akhir animasi, gambar muncul sepenuhnya */
+        transform: translateX(0); /* Pada akhir animasi, gambar kembali ke posisi awal (tidak ada perpindahan) */
+    
+    }
+}
+@keyframes muncul2 {
+    0% {
+        opacity: 0; /* Pada awal animasi, gambar tidak terlihat */
+        }
+    100% {
+        opacity: 1; /* Pada akhir animasi, gambar muncul sepenuhnya */
+        
+    }
+}
+@keyframes muncul3 {
+    0% {
+        opacity: 0; /* Pada awal animasi, gambar tidak terlihat */
+        transform: translateX(100%); /* Pada awal animasi, gambar ada di luar layar kiri */
+    }
+    100% {
+        opacity: 1; /* Pada akhir animasi, gambar muncul sepenuhnya */
+        transform: translateX(0); /* Pada akhir animasi, gambar kembali ke posisi awal (tidak ada perpindahan) */
+    
+    }
+}
 /* Footer */
 footer{
     background-color: var(--primary);
@@ -230,17 +275,17 @@ footer .credit p{
     <h4 class="menu-card-title">Elleis Susianti, S.Pd</h4>
     <p class="menu-card-price">Ketua Kompetensi Keahlian Tata Boga</p>
 </div>
-<div class="menu-card">
+<div class="menu-card2">
     <img src="image/dummy.jpg" 
          alt="kepsek" class="menu-card-img">
-    <h4 class="menu-card-title">Rizki Amalia, S.Pd.T</h4>
-    <p class="menu-card-price">Ketua Kompetensi Keahlian Tata Busana</p>
+    <h4 class="menu-card-title2">Rizki Amalia, S.Pd.T</h4>
+    <p class="menu-card-price2">Ketua Kompetensi Keahlian Tata Busana</p>
 </div>
-<div class="menu-card">
+<div class="menu-card3">
     <img src="image/dummy.jpg" 
          alt="kepsek" class="menu-card-img">
-    <h4 class="menu-card-title">Desy Hairina, M.Pd</h4>
-    <p class="menu-card-price">Ketua Kompetensi Keahlian Tata Kecantikan</p>
+    <h4 class="menu-card-title3">Desy Hairina, M.Pd</h4>
+    <p class="menu-card-price3">Ketua Kompetensi Keahlian Tata Kecantikan</p>
 </div>
 </div>
 <section class="menu" style="margin-top:-3em;">
@@ -251,17 +296,17 @@ footer .credit p{
     <h4 class="menu-card-title">Hj. Fahmilian Hayati, S.Pd</h4>
     <p class="menu-card-price">Ketua Kompetensi Keahlian Akomodasi Perhotelan</p>
 </div>
-<div class="menu-card">
+<div class="menu-card2">
     <img src="image/dummy.jpg" 
          alt="kepsek" class="menu-card-img">
-    <h4 class="menu-card-title">Hidayatullah, S.Kom</h4>
-    <p class="menu-card-price">Ketua Kompetensi Keahlian Rekayasa Perangkat Lunak</p>
+    <h4 class="menu-card-title2">Hidayatullah, S.Kom</h4>
+    <p class="menu-card-price2">Ketua Kompetensi Keahlian Rekayasa Perangkat Lunak</p>
 </div>
-<div class="menu-card">
+<div class="menu-card3">
     <img src="image/dummy.jpg" 
          alt="kepsek" class="menu-card-img">
-    <h4 class="menu-card-title">Indah Mulyasari, S.Pd</h4>
-    <p class="menu-card-price">Ketua Kompetensi Keahlian Usaha Perjalanan Wisata</p>
+    <h4 class="menu-card-title3">Indah Mulyasari, S.Pd</h4>
+    <p class="menu-card-price3">Ketua Kompetensi Keahlian Usaha Perjalanan Wisata</p>
 </div>
 </div>
 </section>
@@ -273,11 +318,11 @@ footer .credit p{
     <h4 class="menu-card-title">St. Fatmawati, S.Pd</h4>
     <p class="menu-card-price">Ketua Kompetensi keahlian Seni Musik Populer</p>
 </div>
-<div class="menu-card">
+<div class="menu-card3">
     <img src="image/dummy.jpg" 
          alt="kepsek" class="menu-card-img">
-    <h4 class="menu-card-title">Marlina, S.Pd</h4>
-    <p class="menu-card-price">Koordinator Guru Umum</p>
+    <h4 class="menu-card-title3">Marlina, S.Pd</h4>
+    <p class="menu-card-price3">Koordinator Guru Umum</p>
 </div>
 </div>
 </section>
