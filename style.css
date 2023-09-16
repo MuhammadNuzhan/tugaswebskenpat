@@ -322,9 +322,12 @@ body{
     display: inline-block;
     padding: 1rem 3rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: #000000;
     background-color: var(--primary);
     cursor: pointer;
+}
+.contact .row form .btn:hover{
+    background-color: #afa938;
 }
 
 /* Manajemen Section */
@@ -364,7 +367,6 @@ body{
     height: auto;
     margin-left: 9px;
 }
-
 .manajemen-title {
     font-weight: bold;
     font-size: 18px;
