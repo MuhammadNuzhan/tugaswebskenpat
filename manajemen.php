@@ -149,6 +149,11 @@ body{
     width: 50%;
     padding: 1px;
     border: 1px solid #fff;
+   
+}
+.menu .row .menu-card img , .menu-card-title, .menu-card-price{
+    opacity: 0; /* Set gambar menjadi tidak terlihat */
+    animation: muncul 6s ease forwards; /* Animasi muncul selama 2 detik */
 }
 .menu .row .menu-card .menu-card-title{
     margin: 2px auto 0.5rem;
@@ -162,7 +167,14 @@ body{
     font-size:15px;
     max-width:13rem;
 }
-
+@keyframes muncul {
+    0% {
+        opacity: 0; /* Pada awal animasi, gambar tidak terlihat */
+    }
+    100% {
+        opacity: 1; /* Pada akhir animasi, gambar muncul sepenuhnya */
+    }
+}
 /* Footer */
 footer{
     background-color: var(--primary);
